@@ -10,6 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Download } from "lucide-react";
+import Image from "next/image"; // Importing Image from next/image
 
 interface PdfResource {
   id: number;
@@ -46,10 +47,12 @@ export function PdfCard({ pdf }: PdfCardProps) {
       </CardHeader>
       <CardContent>
         <div className="h-32 rounded-md overflow-hidden">
-          <img
+          <Image
             src={pdf.coverImage}
             alt={pdf.title + " Cover"}
             className="w-full h-full object-cover rounded opacity-90 hover:opacity-100 transition-opacity"
+            width={500}
+            height={200} 
           />
         </div>
       </CardContent>
@@ -57,7 +60,7 @@ export function PdfCard({ pdf }: PdfCardProps) {
       <CardFooter className="pt-3">
         <Button
           variant="default"
-          className="w-full flex items-center justify-center cursor-pointer gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-md transition-all  hover:shadow-lg"
+          className="w-full flex items-center justify-center cursor-pointer gap-2 bg-blue-600 hover:bg-blue-700 text-white font-medium shadow-md transition-all hover:shadow-lg"
           onClick={handleDownload}
         >
           <Download className="h-4 w-4" />
