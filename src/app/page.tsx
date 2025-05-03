@@ -37,8 +37,8 @@ export default function Home() {
           </p>
 
           <p className="leading-snug text-center">
-            <strong>Note:</strong> "If you find the handwriting difficult to
-            read, try your best to follow along or feel free to skip it"
+            <strong>Note:</strong> &quot;If you find the handwriting difficult
+            to read, try your best to follow along or feel free to skip it&quot;
           </p>
         </header>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
