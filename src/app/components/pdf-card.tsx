@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { FileText, Download } from "lucide-react";
-import Image from "next/image"; // Importing Image from next/image
+import Image from "next/image"; 
 
 interface PdfResource {
   id: number;
